@@ -1,9 +1,9 @@
-import sys
 import os
-from Desing.Loading.loading import Loading
+import sys
+
 from Decrypt.decrypt_file import run as decrypt_run
+from Desing.Loading.loading import Loading
 from Encrypt.NewInfo.EncryptedDatas.write_encrypted_datas import add_encrypted_datas
-from GenerateTool.generate_tool import generate_password
 from requiered_usb import requiered_usb
 
 readme_message = ('PLEASE READ THIS DOCUMENT !\n'
@@ -93,3 +93,4 @@ if __name__ == "__main__":
 
     # Execute the main functionality
     run()
+input("PAUSE")

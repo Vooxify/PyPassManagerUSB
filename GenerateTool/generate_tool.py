@@ -21,13 +21,13 @@ def generate_password():
 
     personal_password = ''
 
-    if lowercase_ask == "y":
+    if lowercase_ask == "y" or '\n':
         personal_password += lowercase
-    if uppercase_ask == "y":
+    if uppercase_ask == "y" or '\n':
         personal_password += uppercase
-    if special_characters_ask == "y":
+    if special_characters_ask == "y" or '\n':
         personal_password += special_characters
-    if numbers_ask == "y":
+    if numbers_ask == "y" or '\n':
         personal_password += numbers
 
     if not personal_password:
